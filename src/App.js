@@ -1,10 +1,16 @@
 import './styles/App.css'
+import { Routes, Route } from 'react-router-dom'
+import Movies from './components/Movies'
+
 
 const App = () => {
   
   return (
     <div className="App">
-      <h3>Redux Thunk Practice</h3>
+      <h2>Redux Movies</h2>
+      <div className="flex-row">
+          <Movies />
+      </div>
     </div>
   )
 }
