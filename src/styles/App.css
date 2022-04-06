@@ -1,11 +1,19 @@
+body {
+  background-color: #232a31;
+}
+
 .App {
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color:  #232a31;
+  color: white;
 }
 
 .movie-container {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  
 }
 
 .overlay {
@@ -18,37 +26,27 @@
   z-index: 9;
 }
 
-.popup-wrapper {
-  justify-items: center;
-  align-items: center;
-}
 
 .popup-container {
-  justify-items: center;
-  align-items: center;
-  position: absolute;
+  position: fixed;
   top: 30%;
   bottom: 0;
   left: 0;
   right: 0;
   z-index: 10;
-  display: grid;
-  grid-auto-columns: 1fr; 
-  grid-template-columns: 1fr 1fr; 
-  grid-template-rows: 1fr; 
-  gap: 0px 0px; 
-  grid-template-areas: 
-    "a b"; 
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
   width: 60%;
   height: 300px;
 }
 
-.popup {
-  grid-area: a;
-}
 
 .popup-info {
   text-align: left;
-  grid-area: b;
 }
 

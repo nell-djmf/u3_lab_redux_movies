@@ -1,5 +1,5 @@
-import { GetMovies } from "../../services/MovieService";
-import { GET_MOVIES } from "../types";
+import { GetMovies} from "../../services/MovieService";
+import { GET_MOVIES} from "../types";
 
 export const LoadMovies = () => {
   return async  (dispatch) => {

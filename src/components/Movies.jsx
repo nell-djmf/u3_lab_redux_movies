@@ -10,7 +10,7 @@ const mapStateToProps = ({ movieState }) => {
 
 const mapDispatchToProps = (dispatch) => {
   return {
-    fetchMovies: () => dispatch(LoadMovies())
+    fetchMovies: () => dispatch(LoadMovies()),
   }
 }
 
@@ -20,6 +20,7 @@ const Movies = (props) => {
 		props.fetchMovies()
 		console.log('props', props.movieState)
 	}, [])
+
 
 
 	return(
